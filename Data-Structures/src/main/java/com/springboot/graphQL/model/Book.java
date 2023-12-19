@@ -1,4 +1,4 @@
-package com.datastructures.DataStructures.graphQL.model;
+package com.springboot.graphQL.model;
 
 
 import lombok.AllArgsConstructor;

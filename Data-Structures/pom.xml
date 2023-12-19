@@ -8,11 +8,11 @@
 		<version>3.2.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.datastructures</groupId>
-	<artifactId>Data-Structures</artifactId>
+	<groupId>com.springboot</groupId>
+	<artifactId>springboot-graphql</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Data-Structures</name>
-	<description>Hands-on spring boot and basic programming practice</description>
+	<name>GraphQL-springboot</name>
+	<description>Hands-on spring boot and graphql practice</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

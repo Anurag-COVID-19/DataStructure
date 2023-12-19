@@ -1,7 +1,7 @@
-package com.datastructures.DataStructures.graphQL.controller;
+package com.springboot.graphQL.controller;
 
-import com.datastructures.DataStructures.graphQL.model.Author;
-import com.datastructures.DataStructures.graphQL.model.Book;
+import com.springboot.graphQL.model.Author;
+import com.springboot.graphQL.model.Book;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.graphql.data.method.annotation.SchemaMapping;
