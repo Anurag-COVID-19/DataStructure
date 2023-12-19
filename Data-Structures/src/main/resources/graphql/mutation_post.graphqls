@@ -1,0 +1,25 @@
+type Mutation {
+    createPost(createPostDTO : CreatePostDTO): Post
+    deletePost(postId: Float!) : String
+}
+
+input CreatePostDTO {
+    postName: String
+    postContent: String
+    noOfLikes: Int
+    postIsDisplayed: Boolean
+}
+
+type Post {
+    id: Float
+    name: String
+    content: String
+    noOfLikes: Int
+    isDisplay: Boolean
+    comments: [PostComments]
+}
+
+type PostComments {
+    id: Float
+    commentContent: String
+}

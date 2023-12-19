@@ -1,0 +1,24 @@
+type Query {
+    allPosts : PostContentDTO
+    getPosts(postId: Float!) : PostContentDTO
+}
+
+type PostContentDTO {
+    statusCode: Int!
+    totalRecord: Int!
+    posts: [PostDTO]
+}
+
+type PostDTO {
+    id: Float
+    name: String
+    content: String
+    noOfLikes: Int
+    isDisplay: Boolean
+    comment: [PostCommentDTO]
+}
+
+type PostCommentDTO {
+    id: Float
+    commentContent: String
+}

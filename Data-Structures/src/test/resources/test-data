@@ -1,0 +1,35 @@
+query:
+query {
+  allPosts{
+    statusCode,
+    totalRecord,
+    posts{
+      id,
+      name,
+      content,
+      noOfLikes,
+      comment{
+        commentContent
+      }
+    }
+  }
+}
+
+mutation:
+mutation ($createPostDTO: CreatePostDTO) {
+  createPost(createPostDTO: $createPostDTO) {
+    id,
+    name,
+    content,
+    noOfLikes,
+    isDisplay
+  }
+}
+{
+  "createPostDTO": {
+    "postName": "DSA",
+    "postContent": "Root of all programming languages",
+    "noOfLikes": 100,
+    "postIsDisplayed": true
+  }
+}
